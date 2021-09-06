@@ -1,4 +1,4 @@
-# CucumberBDD2
+**# CucumberBDD2**
    1.To run this cucumber framework use the following-<br>
    mvn clean<br>
    mvn compile<br>
@@ -6,7 +6,7 @@
    Or customize from command line using -<br>
    mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tag="regression"<br><br>
 
-#CucumberFrameworkStructure <br>
+**#CucumberFrameworkStructure** <br>
    2. We have 4 folders under src/test/java (base, features, pageobjects and stepdef) and a test runner to run the cucumber tests.<br>
    In base - we do the browser setup,<br>
    In features - we have the different scenarios and gherkin syntax test cases,<br>
