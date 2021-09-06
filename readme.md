@@ -16,4 +16,4 @@ mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tag="regression"
                 teardown(), which is run after every scenario in features
    In testrunner file - we run the cucumber tests. In cucumber options, we have path to our feature file, 
                         glue (package to load our glue code) - stepdef, Hook 
-                        and we use plugin to generate cucumber html report from json format
+                        and we use plugin to generate cucumber jvm html report from json format
