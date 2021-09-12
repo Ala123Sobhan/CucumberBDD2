@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-12T22:23:29.481Z",
+        "start_timestamp": "2021-09-12T22:29:53.587Z",
         "before": [
           {
             "result": {
-              "duration": 8856000000,
+              "duration": 5569000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 78000000,
+              "duration": 121000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 961000000,
+              "duration": 801000000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 7234000000,
+              "duration": 2376000000,
               "status": "passed"
             },
             "line": 7,
@@ -71,6 +71,7 @@
           },
           {
             "result": {
+              "duration": 2781000000,
               "status": "passed"
             },
             "line": 8,
@@ -79,6 +80,54 @@
               "location": "stepdef.talteksignup.iEnterStudentBirthMonthDateAndYear()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter student gender as female",
+            "match": {
+              "location": "stepdef.talteksignup.iEnterStudentGenderAsFemale()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I agree with the terms and data use policy",
+            "match": {
+              "location": "stepdef.talteksignup.iAgreeWithTheTermsAndDataUsePolicy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on the Create my account",
+            "match": {
+              "location": "stepdef.talteksignup.iClickOnTheCreateMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be able to get the student id",
+            "match": {
+              "location": "stepdef.talteksignup.iShouldBeAbleToGetTheStudentId()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
