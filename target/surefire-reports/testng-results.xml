@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="27689" started-at="2021-09-06T09:47:53 EDT" finished-at="2021-09-06T09:48:20 EDT">
+  <suite name="Surefire suite" duration-ms="18876" started-at="2021-09-12T18:23:28 EDT" finished-at="2021-09-12T18:23:47 EDT">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@23e028a9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="27689" started-at="2021-09-06T09:47:53 EDT" finished-at="2021-09-06T09:48:20 EDT">
+    <test name="Surefire test" duration-ms="18876" started-at="2021-09-12T18:23:28 EDT" finished-at="2021-09-12T18:23:47 EDT">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@23e028a9]" name="setUpClass" is-config="true" duration-ms="1099" started-at="2021-09-06T09:47:53 EDT" finished-at="2021-09-06T09:47:54 EDT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@23e028a9]" name="setUpClass" is-config="true" duration-ms="856" started-at="2021-09-12T18:23:28 EDT" finished-at="2021-09-12T18:23:29 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@23e028a9]" name="runScenario" duration-ms="21997" started-at="2021-09-06T09:47:54 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-06T09:48:16 EDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@23e028a9]" name="runScenario" duration-ms="17488" started-at="2021-09-12T18:23:29 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-12T18:23:46 EDT">
           <params>
             <param index="0">
               <value>
@@ -30,23 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@23e028a9]" name="runScenario" duration-ms="3935" started-at="2021-09-06T09:48:16 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-06T09:48:20 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should not be able to sign up with invalid email address"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Talentek Sign up feature test suite]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@23e028a9]" name="tearDownClass" is-config="true" duration-ms="538" started-at="2021-09-06T09:48:20 EDT" finished-at="2021-09-06T09:48:20 EDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@23e028a9]" name="tearDownClass" is-config="true" duration-ms="441" started-at="2021-09-12T18:23:46 EDT" finished-at="2021-09-12T18:23:47 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

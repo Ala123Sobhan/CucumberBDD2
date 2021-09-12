@@ -1,5 +1,7 @@
-C:\Users\ala12\AutomationFramework\CucumberBDD2\src\test\java\stepdef\signup.java
-C:\Users\ala12\AutomationFramework\CucumberBDD2\src\test\java\stepdef\Hook.java
-C:\Users\ala12\AutomationFramework\CucumberBDD2\src\test\java\stepdef\signin.java
-C:\Users\ala12\AutomationFramework\CucumberBDD2\src\test\java\base\Config.java
-C:\Users\ala12\AutomationFramework\CucumberBDD2\src\test\java\TestRunner.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\stepdef\talteksignup.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\TestRunner.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\base\Config.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\pageObject\SignUpPageObject.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\stepdef\signin.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\stepdef\Hook.java
+C:\Users\ala12\AutomationFramework\taltek\CucumberBDD2\src\test\java\pageObject\SignInPageObject.java
