@@ -51,7 +51,7 @@ public class Hook extends Config {
             }
         }
         finally {
-           // driver.quit();
+            driver.quit();
         }
     }
 
