@@ -58,6 +58,9 @@ public class SignUpPageObject extends Config {
     @FindBy(how = How.CSS, using = ".alert.alert-success")
     public WebElement successMsg;
 
+    @FindBy(how = How.CSS, using = ".alert.alert-danger p")
+    public WebElement emailErrMsg;
+
     public void waitForElement(WebDriver driver, int time, WebElement ele) {
         WebDriverWait wait = new WebDriverWait(driver, time);
         wait.until(ExpectedConditions.visibilityOf(ele));
@@ -140,10 +143,26 @@ public class SignUpPageObject extends Config {
         createMyAccBtn.click();
     }
 
-    public void verifySuccessMsg(){
+    public String verifySuccessMsg(){
+        String fullMsg = successMsg.getText();
+        String studentID = fullMsg.split("-")[1].trim();
+        System.out.println(fullMsg);
         String msg = successMsg.getText().split(",")[0];
         System.out.println(msg);
         Assert.assertEquals("Thank you for sign up", msg);
 
+        return studentID;
+
     }
+
+    public void verifyInvalidEmailErrMsg(){
+
+        waitForElement(driver, 15, emailErrMsg);
+        String errMsg = emailErrMsg.getText();
+        System.out.println(errMsg);
+
+
+
+    }
+
 }

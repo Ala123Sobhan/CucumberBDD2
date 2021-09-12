@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-12T22:29:53.587Z",
+        "start_timestamp": "2021-09-12T23:44:59.248Z",
         "before": [
           {
             "result": {
-              "duration": 5569000000,
+              "duration": 5413000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 121000000,
+              "duration": 51000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 801000000,
+              "duration": 857000000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 2376000000,
+              "duration": 2607000000,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2781000000,
+              "duration": 2960000000,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 261000000,
+              "duration": 298000000,
               "status": "passed"
             },
             "line": 9,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 226000000,
+              "duration": 223000000,
               "status": "passed"
             },
             "line": 10,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 152000000,
+              "duration": 178000000,
               "status": "passed"
             },
             "line": 11,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 221000000,
+              "duration": 365000000,
               "status": "passed"
             },
             "line": 12,
@@ -142,6 +142,142 @@
           },
           {
             "name": "@prod"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-12T23:45:12.257Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3871000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User should not be able to sign up with invalid email address",
+        "description": "",
+        "id": "talentek-sign-up-feature-test-suite;user-should-not-be-able-to-sign-up-with-invalid-email-address",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdef.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am at talenttek Home Page",
+            "match": {
+              "location": "stepdef.signin.iAmAtTalenttekHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 376000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on  Create New Account button",
+            "match": {
+              "location": "stepdef.signin.iClickOnCreateNewAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1649000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter student information with invalid email address",
+            "match": {
+              "location": "stepdef.talteksignup.iEnterStudentInformationWithInvalidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2170000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter student birth month, date and year",
+            "match": {
+              "location": "stepdef.talteksignup.iEnterStudentBirthMonthDateAndYear()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter student gender as male",
+            "match": {
+              "location": "stepdef.talteksignup.iEnterStudentGenderAsMale()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I agree with the terms and data use policy",
+            "match": {
+              "location": "stepdef.talteksignup.iAgreeWithTheTermsAndDataUsePolicy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Create my account",
+            "match": {
+              "location": "stepdef.talteksignup.iClickOnTheCreateMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should get an invalid email address error message",
+            "match": {
+              "location": "stepdef.talteksignup.iShouldGetAnInvalidEmailAddressErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup"
+          },
+          {
+            "name": "@regression"
           }
         ]
       }
