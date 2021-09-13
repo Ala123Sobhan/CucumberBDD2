@@ -3,5 +3,6 @@ base\Config.class
 pageObject\SignUpPageObject.class
 stepdef\talteksignup.class
 stepdef\signin.class
+FailedTestRunner.class
 stepdef\Hook.class
 TestRunner.class

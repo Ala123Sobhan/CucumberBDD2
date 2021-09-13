@@ -1,9 +1,11 @@
+
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = "src/test/java/features",
+        features = {"@target/failedRerun.txt"},
         glue = "stepdef",
         plugin = {
                 "json:target/cucumber.json",
@@ -11,5 +13,7 @@ import io.cucumber.testng.CucumberOptions;
         }
 )
 
-public class TestRunner extends AbstractTestNGCucumberTests {
+
+public class FailedTestRunner extends  AbstractTestNGCucumberTests {
+
 }

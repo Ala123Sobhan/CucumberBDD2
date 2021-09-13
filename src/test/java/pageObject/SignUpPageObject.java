@@ -160,6 +160,7 @@ public class SignUpPageObject extends Config {
         waitForElement(driver, 15, emailErrMsg);
         String errMsg = emailErrMsg.getText();
         System.out.println(errMsg);
+        Assert.assertEquals("The Email-ID field must contain a valid email addressgit.", errMsg);
 
 
 
