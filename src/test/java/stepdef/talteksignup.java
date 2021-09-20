@@ -9,16 +9,20 @@ import pageObject.SignUpPageObject;
 
 public class talteksignup extends Config {
 
-    public static String studentID;
-    SignUpPageObject su = new SignUpPageObject(driver);
     Faker fk = new Faker();
+    public static String studentID;
+    public static String pass = "12345";
+    public  String email = fk.internet().safeEmailAddress();
+    SignUpPageObject su = new SignUpPageObject(driver);
+
+
     @And("I enter student first name, last name, valid email address, password and confirm password")
     public void iEnterStudentFirstNameLastNameValidEmailAddressPasswordAndConfirmPassword() {
 
         su.enterFirstName(fk.name().firstName());
         su.enterLastName(fk.name().lastName());
         su.enterEmail(fk.internet().safeEmailAddress());
-        su.enterPassword(fk.internet().password(5,6));
+        su.enterPassword(pass);
 
 
 
@@ -45,20 +49,20 @@ public class talteksignup extends Config {
         su.selectCheckBox();
     }
 
-    @When("I click on the Create my account")
-    public void iClickOnTheCreateMyAccount() {
-
-        su.clickCreateAccBtn();
-    }
-
-    @Then("I should be able to get the student id")
-    public void iShouldBeAbleToGetTheStudentId() {
-
-       studentID = su.verifySuccessMsg();
-
-       System.out.println(studentID);
-
-    }
+//    @When("I click on the Create my account")
+//    public void iClickOnTheCreateMyAccount() {
+//
+//        su.clickCreateAccBtn();
+//    }
+//
+//    @Then("I should be able to get the student id")
+//    public void iShouldBeAbleToGetTheStudentId() {
+//
+//       studentID = su.verifySuccessMsg();
+//
+//       System.out.println(studentID);
+//
+//    }
 
     @And("I enter student information with invalid email address")
     public void iEnterStudentInformationWithInvalidEmailAddress() {
@@ -78,4 +82,25 @@ public class talteksignup extends Config {
     public void iShouldGetAnInvalidEmailAddressErrorMessage() {
         su.verifyInvalidEmailErrMsg();
     }
+
+
+    @And("^I click on the Create my account$")
+    public void i_click_on_the_create_my_account() throws Throwable {
+        su.clickCreateAccBtn();
+    }
+
+    @And("^I should be able to get the student id$")
+    public void i_should_be_able_to_get_the_student_id() throws Throwable {
+
+        studentID = su.verifySuccessMsg();
+        System.out.println(studentID);
+
+    }
+
+    @And("^I click on the Login link from taltek website$")
+    public void i_click_on_the_login_link_from_taltek_website() throws Throwable {
+
+        su.clickLoginLink();
+    }
+
 }

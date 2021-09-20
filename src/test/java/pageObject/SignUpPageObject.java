@@ -1,6 +1,7 @@
 package pageObject;
 
 import base.Config;
+import io.cucumber.java.en.And;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -60,6 +61,10 @@ public class SignUpPageObject extends Config {
 
     @FindBy(how = How.CSS, using = ".alert.alert-danger p")
     public WebElement emailErrMsg;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='navbarSupportedContent']/ul/li[2]/a")
+    public WebElement loginLink;
+
 
     public void waitForElement(WebDriver driver, int time, WebElement ele) {
         WebDriverWait wait = new WebDriverWait(driver, time);
@@ -145,9 +150,12 @@ public class SignUpPageObject extends Config {
 
     public String verifySuccessMsg(){
         String fullMsg = successMsg.getText();
+        //Thank you for sign up, here your id - TTCuqThl
         String studentID = fullMsg.split("-")[1].trim();
+        //Thank you for sign up, here your id
         System.out.println(fullMsg);
         String msg = successMsg.getText().split(",")[0];
+        //Thank you for sign up
         System.out.println(msg);
         Assert.assertEquals("Thank you for sign up", msg);
 
@@ -165,5 +173,15 @@ public class SignUpPageObject extends Config {
 
 
     }
+
+    public void clickLoginLink(){
+        waitForElement(driver, 15, loginLink);
+        loginLink.click();
+
+    }
+
+
+
+
 
 }

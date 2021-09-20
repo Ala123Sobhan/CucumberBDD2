@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@prod","@regression","@signup","@smoke"],
+        labels: ["@prod","@regression","@signup","@signuptest","@smoke"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [100.00, 100.00, 100.00, 100.00]
+                data: [100.00, 100.00, 100.00, 100.00, 100.00]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00, 0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>CucumberBDD2</td>
                           <td>1</td>
-                        <td>13 Sep 2021, 14:35</td>
+                        <td>19 Sep 2021, 20:07</td>
           </tr>
         </tbody>
       </table>
@@ -203,7 +203,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">8</td>
-        <td class="duration" data-value="8296000000">8s 296ms</td>
+        <td class="duration" data-value="7212000000">7s 212ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -218,7 +218,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">16</td>
-        <td class="duration" data-value="15130000000">15s 130ms</td>
+        <td class="duration" data-value="12438000000">12s 438ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -233,7 +233,22 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">16</td>
-        <td class="duration" data-value="15130000000">15s 130ms</td>
+        <td class="duration" data-value="12438000000">12s 438ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="signuptest.html">@signuptest</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >11</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">11</td>
+        <td class="duration" data-value="6929000000">6s 929ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -248,24 +263,24 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">8</td>
-        <td class="duration" data-value="8296000000">8s 296ms</td>
+        <td class="duration" data-value="7212000000">7s 212ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>4</td>
-            <td>6</td>
+      <td>5</td>
+            <td>7</td>
       <td>0</td>
-      <td>6</td>
-      <td>48</td>
-      <td>0</td>
-      <td>0</td>
+      <td>7</td>
+      <td>59</td>
       <td>0</td>
       <td>0</td>
-      <td>48</td>
-      <td class="duration">46s 852ms</td>
+      <td>0</td>
+      <td>0</td>
+      <td>59</td>
+      <td class="duration">46s 229ms</td>
       <td></td>
     </tr>
     <tr>

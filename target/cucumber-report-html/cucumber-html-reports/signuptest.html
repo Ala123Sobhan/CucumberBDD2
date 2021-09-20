@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Tag: @regression</title>
+<title>Cucumber-JVM Reports  - Tag: @signuptest</title>
 
 </head>
 <body>
@@ -122,17 +122,17 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@regression</td>
-                    <td  class="passed"    >2</td>
+          <td class="tagname">@signuptest</td>
+                    <td  class="passed"    >1</td>
           <td >0</td>
-          <td class="total">2</td>
-          <td      class="passed"    >16</td>
-          <td >0</td>
-          <td >0</td>
+          <td class="total">1</td>
+          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">16</td>
-          <td class="duration" data-value="12438000000">12s 438ms</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">11</td>
+          <td class="duration" data-value="6929000000">6s 929ms</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -157,10 +157,7 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="signup.html">@signup</a>
-       <a href="regression.html">@regression</a>
-       <a href="smoke.html">@smoke</a>
-       <a href="prod.html">@prod</a>
+       <a href="signuptest.html">@signuptest</a>
   </div>
 
 
@@ -168,7 +165,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User should be able to sign up with valid email address</span>
+  <span class="name">User should be able to sign up with valid email address and sign in using the newly created studentID</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -198,7 +195,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepdef.Hook.openBrowser()</span>
                         
-  <span class="lead-duration duration">9s 521ms</span>
+  <span class="lead-duration duration">3s 305ms</span>
 
           </div>
 
@@ -233,7 +230,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I am at talenttek Home Page</span>
   
-  <span class="lead-duration duration">067ms</span>
+  <span class="lead-duration duration">012ms</span>
 
   </div>
 
@@ -254,7 +251,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on  Create New Account button</span>
   
-  <span class="lead-duration duration">787ms</span>
+  <span class="lead-duration duration">475ms</span>
 
   </div>
 
@@ -275,7 +272,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter student first name, last name, valid email address, password and confirm password</span>
   
-  <span class="lead-duration duration">2s 499ms</span>
+  <span class="lead-duration duration">1s 620ms</span>
 
   </div>
 
@@ -296,7 +293,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter student birth month, date and year</span>
   
-  <span class="lead-duration duration">2s 786ms</span>
+  <span class="lead-duration duration">1s 962ms</span>
 
   </div>
 
@@ -317,7 +314,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter student gender as female</span>
   
-  <span class="lead-duration duration">342ms</span>
+  <span class="lead-duration duration">285ms</span>
 
   </div>
 
@@ -338,7 +335,70 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I agree with the terms and data use policy</span>
   
-  <span class="lead-duration duration">258ms</span>
+  <span class="lead-duration duration">226ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on the Create my account</span>
+  
+  <span class="lead-duration duration">174ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should be able to get the student id</span>
+  
+  <span class="lead-duration duration">419ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on the Login link from taltek website</span>
+  
+  <span class="lead-duration duration">509ms</span>
 
   </div>
 
@@ -357,9 +417,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">I click on the Create my account</span>
+  <span class="name">I enter studentID and password</span>
   
-  <span class="lead-duration duration">209ms</span>
+  <span class="lead-duration duration">612ms</span>
 
   </div>
 
@@ -378,9 +438,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should be able to get the student id</span>
+  <span class="name">I should be able successfully to sign in</span>
   
-  <span class="lead-duration duration">264ms</span>
+  <span class="lead-duration duration">635ms</span>
 
   </div>
 
@@ -419,291 +479,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">stepdef.Hook.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">003ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <a href="file-src-test-java-features-signup-signup-feature.html">View Feature</a> <i>Talentek Sign up feature test suite</i>
-    </div>
-  
-  
-<div class="tags indention">
-       <a href="signup.html">@signup</a>
-       <a href="regression.html">@regression</a>
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User should not be able to sign up with invalid email address</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-5" class="collapse collapsable-details ">
-    
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-6" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">stepdef.Hook.openBrowser()</span>
-                        
-  <span class="lead-duration duration">3s 365ms</span>
-
-          </div>
-
-                      
-
-          
-          
-
-        </div>
-          </div>
-  </div>
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I am at talenttek Home Page</span>
-  
-  <span class="lead-duration duration">006ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click on  Create New Account button</span>
-  
-  <span class="lead-duration duration">446ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter student information with invalid email address</span>
-  
-  <span class="lead-duration duration">1s 491ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter student birth month, date and year</span>
-  
-  <span class="lead-duration duration">2s 170ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter student gender as male</span>
-  
-  <span class="lead-duration duration">363ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I agree with the terms and data use policy</span>
-  
-  <span class="lead-duration duration">274ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I click on the Create my account</span>
-  
-  <span class="lead-duration duration">197ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should get an invalid email address error message</span>
-  
-  <span class="lead-duration duration">279ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-8" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">stepdef.Hook.tearDown(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">001ms</span>
 
           </div>
 
