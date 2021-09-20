@@ -3,6 +3,8 @@ Feature: Captcha Automation
   @captcha
   Scenario: User should be able to input captcha text
     Given I am at "https://sso.us.lg.com/oauth/page/login?authorizeKey=74d577bc-8924-4856-a41d-14283c61d1c0"
-    And I understand the captcha text
-    When I input the the captcha in the captcha input box
-#    Then I should be able to get done with captcha verification
+    And I enter email as "hasanrifa@gmail.com" and password as "Test123$"
+    And I solve the captcha Image
+    And I enter the the captcha text in the captcha input box
+    When I click on the sign in button
+    Then I should be able to successfully sign in

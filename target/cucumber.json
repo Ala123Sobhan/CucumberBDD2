@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-20T18:51:27.209Z",
+        "start_timestamp": "2021-09-20T20:57:00.643Z",
         "before": [
           {
             "result": {
-              "duration": 6608000000,
+              "duration": 9846000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2783000000,
+              "duration": 4256000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,33 +47,79 @@
                   "offset": 9
                 }
               ],
-              "location": "stepdef.lgCaptcha.i_am_at_something(java.lang.String)"
+              "location": "stepdef.lgSignIn.i_am_at_something(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 13908000000,
+              "duration": 736000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "I understand the captcha text",
+            "name": "I enter email as \"hasanrifa@gmail.com\" and password as \"Test123$\"",
             "match": {
-              "location": "stepdef.lgCaptcha.i_understand_the_captcha_text()"
+              "arguments": [
+                {
+                  "val": "hasanrifa@gmail.com",
+                  "offset": 18
+                },
+                {
+                  "val": "Test123$",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdef.lgSignIn.i_enter_email_as_something_and_password_as_something(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 250000000,
+              "duration": 13632000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "I input the the captcha in the captcha input box",
+            "name": "I solve the captcha Image",
             "match": {
-              "location": "stepdef.lgCaptcha.i_input_the_the_captcha_in_the_captcha_input_box()"
+              "location": "stepdef.lgSignIn.i_solve_the_captcha_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the the captcha text in the captcha input box",
+            "match": {
+              "location": "stepdef.lgSignIn.i_enter_the_the_captcha_text_in_the_captcha_input_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 227000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the sign in button",
+            "match": {
+              "location": "stepdef.lgSignIn.i_click_on_the_sign_in_button()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11892000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be able to successfully sign in",
+            "match": {
+              "location": "stepdef.lgSignIn.i_should_be_able_to_successfully_sign_in()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [

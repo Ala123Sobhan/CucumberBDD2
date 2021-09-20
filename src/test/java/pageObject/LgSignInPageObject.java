@@ -4,6 +4,7 @@ import base.Config;
 import com.twocaptcha.TwoCaptcha;
 import com.twocaptcha.captcha.Normal;
 import org.apache.commons.io.FileUtils;
+import org.apache.tools.ant.types.selectors.SelectSelector;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,6 +41,19 @@ public class LgSignInPageObject extends Config {
     @FindBy(how = How.ID, using = "captchaCode")
     public WebElement captchaInput;
 
+    @FindBy(how = How.CLASS_NAME, using = "email")
+    public WebElement emailInput;
+
+    @FindBy(how = How.ID, using = "txtBoxDkagh")
+    public WebElement passwordInput;
+
+    @FindBy(how = How.NAME, using = "signinFormTrigger")
+    public WebElement signInBtn;
+
+    @FindBy(how = How.CSS, using = ".login.logged")
+    public WebElement loginIcon;
+
+
     public void goToSignInUrl(String url) {
         driver.get(url);
     }
@@ -61,6 +76,7 @@ public class LgSignInPageObject extends Config {
             solver.solve(captcha);
             captchaText = captcha.getCode();
             System.out.println("Captcha solved: " + captcha.getCode());
+            System.out.println("captcha- "+captchaText);
         } catch (Exception e) {
             System.out.println("Error occurred: " + e.getMessage());
         }
@@ -69,9 +85,39 @@ public class LgSignInPageObject extends Config {
 
     public void inputCaptcha() {
 
-       WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(captchaInput));
         captchaInput.sendKeys(captchaText);
+
+    }
+
+    public void enterEmailAndPass(String email, String password) {
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOf(emailInput));
+
+        emailInput.sendKeys(email);
+        passwordInput.sendKeys(password);
+    }
+
+    public void clickSignInBtn() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOf(signInBtn));
+
+        signInBtn.click();
+    }
+
+    public void verifySuccessfulLogin(){
+
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOf(loginIcon));
+
+        if(loginIcon.isDisplayed()){
+            Assert.assertEquals(true, true);
+        }
+        else{
+            Assert.assertEquals(false, true);
+        }
 
     }
 }

@@ -51,7 +51,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
+                6,
                 0,
                 0,
                 0,
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 6) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>CucumberBDD2</td>
                           <td>1</td>
-                        <td>20 Sep 2021, 14:51</td>
+                        <td>20 Sep 2021, 16:57</td>
           </tr>
         </tbody>
       </table>
@@ -328,13 +328,13 @@ $(document).ready(function() {
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
-        <td      class="passed"    >3</td>
+        <td      class="passed"    >6</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3</td>
-        <td class="duration" data-value="16941000000">16s 941ms</td>
+        <td class="total">6</td>
+        <td class="duration" data-value="30912000000">30s 912ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -345,13 +345,13 @@ $(document).ready(function() {
             <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>3</td>
+      <td>6</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>3</td>
-      <td class="duration">16s 941ms</td>
+      <td>6</td>
+      <td class="duration">30s 912ms</td>
       <td></td>
     </tr>
     <tr>

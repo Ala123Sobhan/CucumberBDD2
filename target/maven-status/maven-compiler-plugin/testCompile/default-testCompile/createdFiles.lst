@@ -1,9 +1,9 @@
+stepdef\lgSignIn.class
 pageObject\SignInPageObject.class
 base\Config.class
 pageObject\LgSignInPageObject.class
 pageObject\SignUpPageObject.class
 stepdef\talteksignup.class
-stepdef\lgCaptcha.class
 stepdef\signin.class
 FailedTestRunner.class
 stepdef\Hook.class
