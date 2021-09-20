@@ -50,15 +50,7 @@ public class LgSignInPageObject extends Config {
 
         File f = captchaImg.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(f, new File("screenshots.png"));
-
-        /*System.out.println(captchaImg.getAttribute("src"));
-        String imgSrc = captchaImg.getAttribute("src");
-
-        URL url = new URL(imgSrc);
-
-        System.out.println(url);*/
         File file = new File("screenshots.png");
-       // FileUtils.copyURLToFile(url, file);
 
         System.out.println("file: " + file);
         TwoCaptcha solver = new TwoCaptcha("3940daf4eab14ff372ce54691f3de0ac");
