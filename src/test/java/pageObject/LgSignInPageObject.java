@@ -4,6 +4,7 @@ import base.Config;
 import com.twocaptcha.TwoCaptcha;
 import com.twocaptcha.captcha.Normal;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,14 +47,18 @@ public class LgSignInPageObject extends Config {
 
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(captchaImg));
-        System.out.println(captchaImg.getAttribute("src"));
+
+        File f = captchaImg.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(f, new File("screenshots.png"));
+
+        /*System.out.println(captchaImg.getAttribute("src"));
         String imgSrc = captchaImg.getAttribute("src");
 
         URL url = new URL(imgSrc);
 
-        System.out.println(url);
-        File file = new File("download.jpg");
-        FileUtils.copyURLToFile(url, file);
+        System.out.println(url);*/
+        File file = new File("screenshots.png");
+       // FileUtils.copyURLToFile(url, file);
 
         System.out.println("file: " + file);
         TwoCaptcha solver = new TwoCaptcha("3940daf4eab14ff372ce54691f3de0ac");
@@ -72,8 +77,9 @@ public class LgSignInPageObject extends Config {
 
     public void inputCaptcha() {
 
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+       WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(captchaInput));
         captchaInput.sendKeys(captchaText);
+
     }
 }
