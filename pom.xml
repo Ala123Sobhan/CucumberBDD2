@@ -12,6 +12,15 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <developers>
+        <developer>
+            <email>info@2captcha.com</email>
+            <name>2captcha</name>
+            <url>https://github.com/2captcha</url>
+            <id>2captcha</id>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -21,11 +30,19 @@
     <dependencies>
 
         <!-- SELENIUM -->
+        <!--<dependency>
+             <groupId>org.seleniumhq.selenium</groupId>
+             <artifactId>selenium-java</artifactId>
+             <version>4.0.0-beta-4</version>
+         </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>4.0.0-alpha-3</version>
         </dependency>
+
 
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -52,6 +69,29 @@
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
         </dependency>
+
+        <!--CAPTCHA-->
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+        <!--   <dependency>
+               <groupId>com.squareup.okhttp3</groupId>
+               <artifactId>okhttp</artifactId>
+               <version>3.14.9</version>
+           </dependency>
+   -->
+
+        <dependency>
+            <groupId>com.github.2captcha</groupId>
+            <artifactId>2captcha-java</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
 
 
     </dependencies>

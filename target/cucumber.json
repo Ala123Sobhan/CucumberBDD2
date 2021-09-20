@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-20T00:25:56.271Z",
+        "start_timestamp": "2021-09-20T17:49:43.320Z",
         "before": [
           {
             "result": {
-              "duration": 8245000000,
+              "duration": 5927000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 26,
-        "name": "User should be able to sign up with valid email address and sign in using the newly created studentID",
+        "line": 4,
+        "name": "User should be able to input captcha text",
         "description": "",
-        "id": "talentek-sign-up-feature-test-suite;user-should-be-able-to-sign-up-with-valid-email-address-and-sign-in-using-the-newly-created-studentid",
+        "id": "captcha-automation;user-should-be-able-to-input-captcha-text",
         "after": [
           {
             "result": {
-              "duration": 933000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -35,149 +35,59 @@
         "steps": [
           {
             "result": {
-              "duration": 132000000,
+              "duration": 2948000000,
               "status": "passed"
             },
-            "line": 27,
-            "name": "I am at talenttek Home Page",
+            "line": 5,
+            "name": "I am at \"https://sso.us.lg.com/oauth/page/login?authorizeKey\u003d74d577bc-8924-4856-a41d-14283c61d1c0\"",
             "match": {
-              "location": "stepdef.signin.iAmAtTalenttekHomePage()"
+              "arguments": [
+                {
+                  "val": "https://sso.us.lg.com/oauth/page/login?authorizeKey\u003d74d577bc-8924-4856-a41d-14283c61d1c0",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdef.lgCaptcha.i_am_at_something(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 779000000,
+              "duration": 13839000000,
               "status": "passed"
             },
-            "line": 28,
-            "name": "I click on  Create New Account button",
+            "line": 6,
+            "name": "I understand the captcha text",
             "match": {
-              "location": "stepdef.signin.iClickOnCreateNewAccountButton()"
+              "location": "stepdef.lgCaptcha.i_understand_the_captcha_text()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2987000000,
+              "duration": 394000000,
               "status": "passed"
             },
-            "line": 29,
-            "name": "I enter student first name, last name, valid email address, password and confirm password",
+            "line": 7,
+            "name": "I input the the captcha in the captcha input box",
             "match": {
-              "location": "stepdef.talteksignup.iEnterStudentFirstNameLastNameValidEmailAddressPasswordAndConfirmPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3149000000,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I enter student birth month, date and year",
-            "match": {
-              "location": "stepdef.talteksignup.iEnterStudentBirthMonthDateAndYear()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 302000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I enter student gender as female",
-            "match": {
-              "location": "stepdef.talteksignup.iEnterStudentGenderAsFemale()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 242000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I agree with the terms and data use policy",
-            "match": {
-              "location": "stepdef.talteksignup.iAgreeWithTheTermsAndDataUsePolicy()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 165000000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I click on the Create my account",
-            "match": {
-              "location": "stepdef.talteksignup.i_click_on_the_create_my_account()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 346000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I should be able to get the student id",
-            "match": {
-              "location": "stepdef.talteksignup.i_should_be_able_to_get_the_student_id()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 535000000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I click on the Login link from taltek website",
-            "match": {
-              "location": "stepdef.talteksignup.i_click_on_the_login_link_from_taltek_website()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 908000000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I enter studentID and password",
-            "match": {
-              "location": "stepdef.signin.i_enter_student_id_and_password()"
+              "location": "stepdef.lgCaptcha.i_input_the_the_captcha_in_the_captcha_input_box()"
             },
             "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 811000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "I should be able successfully to sign in",
-            "match": {
-              "location": "stepdef.signin.i_should_be_able_successfully_to_sign_in()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@signuptest"
+            "name": "@captcha"
           }
         ]
       }
     ],
-    "name": "Talentek Sign up feature test suite",
+    "name": "Captcha Automation",
     "description": "",
-    "id": "talentek-sign-up-feature-test-suite",
+    "id": "captcha-automation",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/signup/signup.feature",
+    "uri": "file:src/test/java/features/captcha/LgSignInCaptcha.feature",
     "tags": []
   }
 ]
