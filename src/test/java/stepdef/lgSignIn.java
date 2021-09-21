@@ -16,6 +16,12 @@ public class lgSignIn extends Config {
         lg.goToSignInUrl(url);
     }
 
+
+    @And("^I click on sign in link$")
+    public void i_click_on_sign_in_link() throws Throwable {
+        lg.clickSignInLink();
+    }
+
     @When("^I click on the sign in button$")
     public void i_click_on_the_sign_in_button() throws Throwable {
          lg.clickSignInBtn();

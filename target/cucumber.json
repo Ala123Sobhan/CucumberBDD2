@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-20T20:57:00.643Z",
+        "start_timestamp": "2021-09-21T14:56:56.157Z",
         "before": [
           {
             "result": {
-              "duration": 9846000000,
+              "duration": 4709000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
+        "line": 14,
         "name": "User should be able to input captcha text",
         "description": "",
         "id": "captcha-automation;user-should-be-able-to-input-captcha-text",
         "after": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 923000000,
               "status": "passed"
             },
             "match": {
@@ -35,15 +35,15 @@
         "steps": [
           {
             "result": {
-              "duration": 4256000000,
+              "duration": 16482000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I am at \"https://sso.us.lg.com/oauth/page/login?authorizeKey\u003d74d577bc-8924-4856-a41d-14283c61d1c0\"",
+            "line": 15,
+            "name": "I am at \"https://www.lg.com/us\"",
             "match": {
               "arguments": [
                 {
-                  "val": "https://sso.us.lg.com/oauth/page/login?authorizeKey\u003d74d577bc-8924-4856-a41d-14283c61d1c0",
+                  "val": "https://www.lg.com/us",
                   "offset": 9
                 }
               ],
@@ -53,10 +53,22 @@
           },
           {
             "result": {
-              "duration": 736000000,
+              "duration": 8318000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 16,
+            "name": "I click on sign in link",
+            "match": {
+              "location": "stepdef.lgSignIn.i_click_on_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 308000000,
+              "status": "passed"
+            },
+            "line": 17,
             "name": "I enter email as \"hasanrifa@gmail.com\" and password as \"Test123$\"",
             "match": {
               "arguments": [
@@ -75,10 +87,10 @@
           },
           {
             "result": {
-              "duration": 13632000000,
+              "duration": 16929000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 18,
             "name": "I solve the captcha Image",
             "match": {
               "location": "stepdef.lgSignIn.i_solve_the_captcha_image()"
@@ -87,10 +99,10 @@
           },
           {
             "result": {
-              "duration": 169000000,
+              "duration": 319000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 19,
             "name": "I enter the the captcha text in the captcha input box",
             "match": {
               "location": "stepdef.lgSignIn.i_enter_the_the_captcha_text_in_the_captcha_input_box()"
@@ -99,10 +111,10 @@
           },
           {
             "result": {
-              "duration": 227000000,
+              "duration": 148000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 20,
             "name": "I click on the sign in button",
             "match": {
               "location": "stepdef.lgSignIn.i_click_on_the_sign_in_button()"
@@ -111,20 +123,15 @@
           },
           {
             "result": {
-              "duration": 11892000000,
+              "duration": 7742000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 21,
             "name": "I should be able to successfully sign in",
             "match": {
               "location": "stepdef.lgSignIn.i_should_be_able_to_successfully_sign_in()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@captcha"
           }
         ]
       }

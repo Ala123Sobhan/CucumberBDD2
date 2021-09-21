@@ -5,9 +5,7 @@ import com.twocaptcha.TwoCaptcha;
 import com.twocaptcha.captcha.Normal;
 import org.apache.commons.io.FileUtils;
 import org.apache.tools.ant.types.selectors.SelectSelector;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -118,6 +116,39 @@ public class LgSignInPageObject extends Config {
         else{
             Assert.assertEquals(false, true);
         }
+
+    }
+    public void waitForPageToBeReady(WebDriver driver)
+    {
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        //This loop will rotate for 100 times to check If page Is ready after every 1 second.
+        for (int i=0; i<100; i++)
+        {
+            try
+            {
+                Thread.sleep(1000);
+            }catch (InterruptedException e) {}
+            //To check page ready state.
+            if (js.executeScript("return document.readyState").toString().equals("complete"))
+            {
+                break;
+            }
+        }
+    }
+
+
+
+    public void clickSignInLink() throws InterruptedException {
+
+        waitForPageToBeReady(driver);
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        //js.executeScript("document.getElementById('closeIconContainer').click();");
+
+        WebElement login = driver.findElement(By.cssSelector("div.login"));
+        WebElement signInLink =login.findElement(By.cssSelector("a[data-link-name='sign_in_/_sign_up']"));
+        //signInLink.click();
+        js.executeScript("arguments[0].click();", signInLink);
+
 
     }
 }

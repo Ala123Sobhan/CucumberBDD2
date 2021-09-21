@@ -38,7 +38,7 @@ public class Hook extends Config {
                 break;
         }
 
-        driver.get(url);
+        //driver.get(url);
     }
 
     @After
@@ -51,7 +51,7 @@ public class Hook extends Config {
             }
         }
         finally {
-          // driver.quit();
+           driver.quit();
         }
     }
 
