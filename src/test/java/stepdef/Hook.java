@@ -38,7 +38,7 @@ public class Hook extends Config {
                 break;
         }
 
-        //driver.get(url);
+        driver.get(url);
     }
 
     @After

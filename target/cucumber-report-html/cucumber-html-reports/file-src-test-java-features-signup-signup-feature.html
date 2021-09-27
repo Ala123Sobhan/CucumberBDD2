@@ -42,10 +42,9 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Failures Overview</title>
+<title>Cucumber-JVM Reports  - Feature: Talentek Sign up feature test suite</title>
 
 </head>
-
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
@@ -56,7 +55,7 @@ $(document).ready(function() {
                 <li role="presentation" ><a href="feature-overview.html">Features</a></li>
         <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
         <li role="presentation" ><a href="step-overview.html">Steps</a></li>
-        <li role="presentation"  class="active" ><a href="failures-overview.html">Failures</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
       </ul>
     </div>
   </div>
@@ -88,22 +87,84 @@ $(document).ready(function() {
 <div id="report-lead" class="container-fluid>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h2>Failures Overview</h2>
-              <p>The following summary displays scenarios that failed.</p>
+      <h2>Feature Report</h2>
           </div>
   </div>
 </div>
 
-
 <div class="container-fluid" id="summary">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-              <div class="elements">
+      <table class="stats-table">
+
+        <thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="6">Steps</th>
+    <th colspan="2">Totals</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+        <tbody>
+        <tr>
+          <td class="tagname">Talentek Sign up feature test suite</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+          <td      class="passed"    >5</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >5</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">11</td>
+          <td class="duration" data-value="16694000000">16s 694ms</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Talentek Sign up feature test suite</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
                       
 <div class="element">
-      <div class="indention">
-      <a href="file-src-test-java-features-signup-signup-feature.html">View Feature</a> <i>Talentek Sign up feature test suite</i>
-    </div>
   
   
 <div class="tags indention">
@@ -519,7 +580,9 @@ Session ID: 67217292cfac0add722470cd7d81b827
 </div>
 
                   </div>
-          </div>
+
+      </div>
+    </div>
   </div>
 </div>
 <br>

@@ -1,5 +1,9 @@
+import com.github.mkolisnyk.cucumber.runner.ExtendedCucumber;
+import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.junit.runner.RunWith;
+
 
 
 @CucumberOptions(
@@ -9,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
        // tags = "@signuptest",
         plugin = {
                 "json:target/cucumber.json",
-                "rerun:target/failedRerun.txt"
+                //"rerun:target/failedRerun.txt"
         }
 )
 

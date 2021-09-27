@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-21T14:56:56.157Z",
+        "start_timestamp": "2021-09-26T21:08:24.506Z",
         "before": [
           {
             "result": {
-              "duration": 4709000000,
+              "duration": 13007000000,
               "status": "passed"
             },
             "match": {
@@ -15,15 +15,16 @@
             }
           }
         ],
-        "line": 14,
-        "name": "User should be able to input captcha text",
+        "line": 26,
+        "name": "User should be able to sign up with valid email address and sign in using the newly created studentID",
         "description": "",
-        "id": "captcha-automation;user-should-be-able-to-input-captcha-text",
+        "id": "talentek-sign-up-feature-test-suite;user-should-be-able-to-sign-up-with-valid-email-address-and-sign-in-using-the-newly-created-studentid",
         "after": [
           {
             "result": {
-              "duration": 923000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d93.0.4577.82)\nBuild info: version: \u00274.0.0-alpha-3\u0027, revision: \u00278c567de6dc\u0027\nSystem info: host: \u0027DESKTOP-3MLRAML\u0027, ip: \u0027192.168.1.242\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\\Users\\ala12\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 67217292cfac0add722470cd7d81b827\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:633)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:297)\r\n\tat stepdef.Hook.tearDown(Hook.java:49)\r\n",
+              "duration": 917000000,
+              "status": "failed"
             },
             "match": {
               "location": "stepdef.Hook.tearDown(io.cucumber.java.Scenario)"
@@ -35,112 +36,145 @@
         "steps": [
           {
             "result": {
-              "duration": 16482000000,
+              "duration": 62000000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I am at \"https://www.lg.com/us\"",
+            "line": 27,
+            "name": "I am at talenttek Home Page",
             "match": {
-              "arguments": [
-                {
-                  "val": "https://www.lg.com/us",
-                  "offset": 9
-                }
-              ],
-              "location": "stepdef.lgSignIn.i_am_at_something(java.lang.String)"
+              "location": "stepdef.signin.iAmAtTalenttekHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8318000000,
+              "duration": 923000000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I click on sign in link",
+            "line": 28,
+            "name": "I click on  Create New Account button",
             "match": {
-              "location": "stepdef.lgSignIn.i_click_on_sign_in_link()"
+              "location": "stepdef.signin.iClickOnCreateNewAccountButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 308000000,
+              "duration": 2061000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "I enter email as \"hasanrifa@gmail.com\" and password as \"Test123$\"",
+            "line": 29,
+            "name": "I enter student first name, last name, valid email address, password and confirm password",
             "match": {
-              "arguments": [
-                {
-                  "val": "hasanrifa@gmail.com",
-                  "offset": 18
-                },
-                {
-                  "val": "Test123$",
-                  "offset": 56
-                }
-              ],
-              "location": "stepdef.lgSignIn.i_enter_email_as_something_and_password_as_something(java.lang.String,java.lang.String)"
+              "location": "stepdef.talteksignup.iEnterStudentFirstNameLastNameValidEmailAddressPasswordAndConfirmPassword()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 16929000000,
+              "duration": 2238000000,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I solve the captcha Image",
+            "line": 30,
+            "name": "I enter student birth month, date and year",
             "match": {
-              "location": "stepdef.lgSignIn.i_solve_the_captcha_image()"
+              "location": "stepdef.talteksignup.iEnterStudentBirthMonthDateAndYear()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 319000000,
+              "duration": 11368000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I enter the the captcha text in the captcha input box",
+            "line": 31,
+            "name": "I enter student gender as female",
             "match": {
-              "location": "stepdef.lgSignIn.i_enter_the_the_captcha_text_in_the_captcha_input_box()"
+              "location": "stepdef.talteksignup.iEnterStudentGenderAsFemale()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 148000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d93.0.4577.82)\nBuild info: version: \u00274.0.0-alpha-3\u0027, revision: \u00278c567de6dc\u0027\nSystem info: host: \u0027DESKTOP-3MLRAML\u0027, ip: \u0027192.168.1.242\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\\Users\\ala12\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 67217292cfac0add722470cd7d81b827\n*** Element info: {Using\u003dname, value\u003dagree}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:313)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy19.isSelected(Unknown Source)\r\n\tat pageObject.SignUpPageObject.selectCheckBox(SignUpPageObject.java:143)\r\n\tat stepdef.talteksignup.iAgreeWithTheTermsAndDataUsePolicy(talteksignup.java:49)\r\n\tat ✽.I agree with the terms and data use policy(file:///C:/Users/ala12/AutomationFramework/taltek/CucumberBDD2/src/test/java/features/signup/signup.feature:32)\r\n",
+              "duration": 42000000,
+              "status": "failed"
             },
-            "line": 20,
-            "name": "I click on the sign in button",
+            "line": 32,
+            "name": "I agree with the terms and data use policy",
             "match": {
-              "location": "stepdef.lgSignIn.i_click_on_the_sign_in_button()"
+              "location": "stepdef.talteksignup.iAgreeWithTheTermsAndDataUsePolicy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I click on the Create my account",
+            "match": {
+              "location": "stepdef.talteksignup.i_click_on_the_create_my_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I should be able to get the student id",
+            "match": {
+              "location": "stepdef.talteksignup.i_should_be_able_to_get_the_student_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I click on the Login link from taltek website",
+            "match": {
+              "location": "stepdef.talteksignup.i_click_on_the_login_link_from_taltek_website()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I enter studentID and password",
+            "match": {
+              "location": "stepdef.signin.i_enter_student_id_and_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7742000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 21,
-            "name": "I should be able to successfully sign in",
+            "line": 37,
+            "name": "I should be able successfully to sign in",
             "match": {
-              "location": "stepdef.lgSignIn.i_should_be_able_to_successfully_sign_in()"
+              "location": "stepdef.signin.i_should_be_able_successfully_to_sign_in()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signuptest"
           }
         ]
       }
     ],
-    "name": "Captcha Automation",
+    "name": "Talentek Sign up feature test suite",
     "description": "",
-    "id": "captcha-automation",
+    "id": "talentek-sign-up-feature-test-suite",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/captcha/LgSignInCaptcha.feature",
+    "uri": "file:src/test/java/features/signup/signup.feature",
     "tags": []
   }
 ]
