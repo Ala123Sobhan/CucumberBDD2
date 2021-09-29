@@ -4,8 +4,8 @@
    mvn compile<br>
    mvn verify<br>
    Or customize from command line using -<br>
-   mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tag="regression"<br>
-   Or mvn test -Dcucumber.filter.tags="@signuptest"<br>
+   mvn verify -Denv=qa -Dbrowser=ch -Dcucumber.filter.tag="@regression"<br>
+   Or mvn test verify -Dcucumber.filter.tags="@signuptest"<br>
   
 **#CucumberFrameworkStructure** <br>
    2. We have 4 folders under src/test/java (base, features, pageobjects and stepdef) and a test runner to run the cucumber tests.<br>
